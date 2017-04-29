@@ -8,17 +8,32 @@ import java.util.ArrayList;
 
 public class TongDai {
 
-    private ArrayList<KQSXDay> kqsxDays;
+    private String name;
+    private ArrayList<KQSXDate> kqsxDays;
 
-    public TongDai(ArrayList<KQSXDay> kqsxDays) {
-        this.kqsxDays = kqsxDays;
+    public TongDai(){
+        kqsxDays = null;
+        name = "";
     }
 
-    public ArrayList<KQSXDay> getKqsxDays() {
+    public TongDai(ArrayList<KQSXDate> kqsxDays, String name) {
+        this.kqsxDays = kqsxDays;
+        this.name = name;
+    }
+
+    public ArrayList<KQSXDate> getKqsxDays() {
         return kqsxDays;
     }
 
-    public void setKqsxDays(ArrayList<KQSXDay> kqsxDays) {
+    public void setKqsxDays(ArrayList<KQSXDate> kqsxDays) {
         this.kqsxDays = kqsxDays;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 }
