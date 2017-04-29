@@ -1,12 +1,13 @@
 package com.example.trinhcanhphuc.viewxskt;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by trinhcanhphuc on 4/29/17.
  */
 
-class KQSXDate {
+class KQSXDate implements Serializable {
 
     private String date;
     private ArrayList<String> first_prize;

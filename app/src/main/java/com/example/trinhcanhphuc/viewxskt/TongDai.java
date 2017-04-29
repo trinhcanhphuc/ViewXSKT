@@ -1,12 +1,13 @@
 package com.example.trinhcanhphuc.viewxskt;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by trinhcanhphuc on 4/29/17.
  */
 
-public class TongDai {
+public class TongDai implements Serializable {
 
     private String name;
     private ArrayList<KQSXDate> kqsxDays;
